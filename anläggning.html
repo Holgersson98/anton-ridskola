@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+        background-color: burlywood;
+        font-family: Verdana, sans-serif;
+          
+        }
+        h1{
+          text-align: center;
+          
+        }
+        
+        
+        
+          .flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+          }
+         
+         
+        .navbar {
+          overflow: hidden;
+          background-color: burlywood;
+          
+        }
+        
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: black;
+          text-align: center;
+          padding: 15px 16px;
+          text-decoration: none;
+        }
+        
+        
+        .subnav {
+          float: left;
+          overflow: hidden;
+          background-color: burlywood;
+          
+        }
+        
+        
+        .subnav .subnavbtn {
+          font-size: 16px;
+          border: none;
+          outline: none;
+          color: black;
+          padding: 15px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        
+        
+        
+        .subnav-content {
+          display: none;
+          position: absolute;
+          left: 100;
+          background-color:burlywood;
+          width: 7.3em;
+          z-index: 1;
+        }
+        
+        
+        
+        .subnav-content a {
+          float: left;
+          color: black;
+          text-decoration: none;
+        }
+        
+        
+        .subnav-content a:hover {
+          color: grey;
+        }
+        
+        
+        .subnav:hover .subnav-content {
+          display: block;
+        }
+        .flexcontainer {
+            display: flex;
+            width: 100%;
+            margin-top: 3%;
+            flex-direction: row;
+            align-self: center;
+            
+            
+            
+            }
+        .hästkort {
+            
+          display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            font-family: 'Combo', cursive;
+            font-size: 95%;
+            border-radius: 0.5rem;
+            
+            
+            word-wrap: break-word;
+            
+        }
+        
+            .hästkort > img {
+            padding-top: 0%;
+            width: 90%;
+            height: 60%;
+        }
+       
+          
+        
+            </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Anläggningen</h1>
+    <div class="flex-container"> 
+
+            
+        <div class="navbar">
+            <a href="index.html">Hem</a>
+            <div class="subnav">
+              <button class="subnavbtn">Föreningen <i class="down"></i></button>
+              <div class="subnav-content">
+                <a href="föreningen.html">Styrelsen</a>
+                <a href="medlem.html">Medlemskap</a>
+              </div>
+            </div>
+            <div class="subnav">
+              <button class="subnavbtn">Ridskolan <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="hästar.html">Hästarna</a>
+                <a href="personal.html">Personal</a>
+                <a href="info.html">Rid hos oss!</a>
+              </div>
+            </div>
+            
+                <a href="anläggning.html">Anläggning</a>
+                <a href="kontakt.html">Kontakt</a>
+                </div>
+                </div>
+                <div class="flexcontainer">
+                    <div class="hästkort">
+                      <img src="/bilder/skiss.jpeg">
+                      <p>Adress: Fryele</p>
+                      
+                    </div>
+
+</body>
+</html>

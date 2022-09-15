@@ -1,0 +1,109 @@
+
+body{
+background-color: burlywood;
+font-family: Verdana, sans-serif;
+}
+
+
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+
+
+
+
+  .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+ 
+.column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  
+ 
+ 
+.navbar {
+  overflow: hidden;
+  background-color: burlywood;
+  
+}
+
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+
+.subnav {
+  float: left;
+  overflow: hidden;
+  background-color: burlywood;
+  
+}
+
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 15px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 100;
+  background-color:burlywood;
+  width: 7.3em;
+  z-index: 1;
+}
+
+
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+
+.subnav-content a:hover {
+  color: grey;
+}
+
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+  
