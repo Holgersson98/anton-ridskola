@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        body{
+            background-color: burlywood;
+            
+            }
+            
+            
+            h1{
+              text-align: center;
+            }
+            h2{
+              text-align: center;
+            }
+           
+            .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            .text2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                
+            }
+            
+            
+            
+              .flex-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+              }
+             
+            .column {
+              float: left;
+              width: 32%;
+              padding: 5px;
+            }
+            
+            
+            .row::after {
+              content: "";
+              clear: both;
+              display: table;
+            }
+            
+              
+             
+             
+            .navbar {
+              overflow: hidden;
+              background-color: burlywood;
+              
+            }
+            
+           
+            .navbar a {
+              float: left;
+              font-size: 16px;
+              color: black;
+              text-align: center;
+              padding: 15px 16px;
+              text-decoration: none;
+            }
+            
+           
+            .subnav {
+              float: left;
+              overflow: hidden;
+              background-color: burlywood;
+              
+            }
+            
+            
+            .subnav .subnavbtn {
+              font-size: 16px;
+              border: none;
+              outline: none;
+              color: black;
+              padding: 15px 16px;
+              background-color: inherit;
+              font-family: inherit;
+              margin: 0;
+            }
+            
+            
+            
+           
+            .subnav-content {
+              display: none;
+              position: absolute;
+              left: 100;
+              background-color:burlywood;
+              width: 7.3em;
+              z-index: 1;
+            }
+            
+            
+           
+            .subnav-content a {
+              float: left;
+              color: black;
+              text-decoration: none;
+            }
+            
+            
+            .subnav-content a:hover {
+              color: grey;
+            }
+            
+            
+            .subnav:hover .subnav-content {
+              display: block;
+            }
+            ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+
+.month {
+  padding: 70px 0px;
+  width: 100%;
+  background:#1abc9c;
+  text-align: center;
+}
+
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:burlywood;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: black;
+  text-align: center;
+}
+
+
+.days {
+  padding: 10px 0;
+  background: burlywood;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: black;
+}
+
+
+.days li .active {
+  padding: 5px;
+  background: white;
+  color: burlywood !important
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rid hos oss!</h1>
+    <div class="flex-container">
+        
+      
+  
+     
+        <div class="navbar">
+            <a href="index.html">Hem</a>
+            <div class="subnav">
+              <button class="subnavbtn">Föreningen <i class="down"></i></button>
+              <div class="subnav-content">
+                <a href="föreningen.html">Styrelsen</a>
+                <a href="medlem.html">Medlemskap</a>
+              </div>
+            </div>
+            <div class="subnav">
+              <button class="subnavbtn">Ridskolan <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="hästar.html">Hästarna</a>
+                <a href="personal.html">Personal</a>
+                <a href="info.html">Rid hos oss!</a>
+              </div>
+            </div>
+            
+                <a href="anläggning.html">Anläggning</a>
+                <a href="kontakt.html">Kontakt</a>
+                </div>
+    </div>
+    <div class="text">
+        <h2>Priser:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam saepe aliquid labore, totam sit possimus obcaecati voluptatum? Exercitationem, assumenda repellendus error deserunt aliquid distinctio iste dolorem, odit asperiores omnis a.</p>
+    </div>
+    <div class="text2">
+        <h2>Grupper:</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi porro neque dolor corporis sint in deleniti assumenda iste alias magni doloribus, debitis illum laboriosam modi quod? Repudiandae commodi harum quasi.</p>
+    </div>
+    <div class="month">
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>September<br><span style="font-size:18px">2022</span></li>
+        </ul>
+      </div>
+      
+      <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+      </ul>
+      
+      <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li><span class="active">12</span></li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li><span class="active">22</span></li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li><span class="active">29</span></li>
+        <li>30</li>
+        <li>31</li>
+      </ul>
+    </body>
+</html>
